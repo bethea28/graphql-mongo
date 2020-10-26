@@ -6,6 +6,7 @@ const findOrCreate = require('mongoose-findorcreate')
 const BookSchema = new mongoose.Schema({
   title: String,
   author: String,
+  id: Number,
 })
 
 BookSchema.plugin(findOrCreate)
